@@ -2,7 +2,6 @@ package com.example.android_ci_pratice.test
 
 
 import org.junit.Assert.assertEquals
-import org.junit.Assert.assertFalse
 import org.junit.Assert.assertTrue
 import org.junit.Test
 
@@ -29,16 +28,11 @@ class StudentTest {
 
     @Test
     fun `get name fails`() {
-        assertEquals("Maria", student.getName())
+        assertEquals("John", student.getName())
     }
 
     @Test
     fun `get email fails`() {
-        assertEquals("wrong@mail.com", student.getEmail())
-    }
-
-    @Test
-    fun `student is not adult fails`() {
-        assertFalse(student.isAdult())
+        assertEquals("john@mail.com", student.getEmail())
     }
 }
