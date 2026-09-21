@@ -28,7 +28,7 @@ class StudentTest {
 
     @Test
     fun `get name fails`() {
-        assertEquals("John", student.getName())
+        assertEquals("JohnFail", student.getName())
     }
 
     @Test
